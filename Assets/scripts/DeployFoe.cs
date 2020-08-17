@@ -21,7 +21,8 @@ public class DeployFoe : MonoBehaviour
     {
         DeployFoe.FoeCount++;
         GameObject a = Instantiate(foePrefab) as GameObject;
-        a.transform.position = new Vector2(UnityEngine.Random.Range(-scrnbounds.x, scrnbounds.x), scrnbounds.y * 2);
+        a.transform.position = new Vector2(UnityEngine.Random.Range(
+            -scrnbounds.x, scrnbounds.x), scrnbounds.y * 2);
     }
 
     IEnumerator FoeWave()
