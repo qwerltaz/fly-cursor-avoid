@@ -34,8 +34,10 @@ public class DeployFoe : MonoBehaviour
             respawnTime -= .01f/DeployFoe.FoeCount;
             yield return new WaitForSeconds(respawnTime);
         }
-        while (respawnTime <= 0.01) { 
-        respawnTime += .01f; }
+        while (respawnTime <= 0.01) 
+        { 
+            respawnTime += .01f; 
+        }
         StartCoroutine(FoeWave());
     }
 }
