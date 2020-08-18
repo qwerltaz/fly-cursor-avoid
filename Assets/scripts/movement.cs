@@ -19,7 +19,8 @@ public class movement : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y < -scrnbounds.y * 2) { 
+        if (transform.position.y < -scrnbounds.y * 2)
+        {
             Destroy(this.gameObject);
             DeployFoe.FoeCount--;
         }

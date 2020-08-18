@@ -8,7 +8,7 @@ public class ui_menu : MonoBehaviour
     public void changescene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            }
+    }
     public void quit()
     {
         Debug.Log("aww");

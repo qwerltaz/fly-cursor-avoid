@@ -10,7 +10,7 @@ public class DeployFoe : MonoBehaviour
     public GameObject foePrefab;
     public float respawnTime;
     private Vector2 scrnbounds;
-    
+
     void Start()
     {
         scrnbounds = Camera.main.ScreenToWorldPoint(
@@ -32,12 +32,12 @@ public class DeployFoe : MonoBehaviour
         while (respawnTime > 0.01)
         {
             spawnfoe();
-            respawnTime -= .01f/DeployFoe.FoeCount;
+            respawnTime -= .01f / DeployFoe.FoeCount;
             yield return new WaitForSeconds(respawnTime);
         }
-        while (respawnTime <= 0.01) 
-        { 
-            respawnTime += .01f; 
+        while (respawnTime <= 0.01)
+        {
+            respawnTime += .01f;
         }
         StartCoroutine(FoeWave());
     }

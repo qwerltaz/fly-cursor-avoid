@@ -16,7 +16,9 @@ public class textscript : MonoBehaviour
     void Update()
     {
         if (globals.isaliveglobal == true)
+        {
             score += (60 * Time.deltaTime);
             scoretext.text = score.ToString("0");
+        }
     }
 }
