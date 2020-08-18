@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{2FBE4CC8-79AF-A3BF-360E-A290E4EC55CD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -58,7 +57,6 @@
   <ItemGroup>
     <Compile Include="Assets\scripts\dot.cs" />
     <Compile Include="Assets\scripts\DeployFoe.cs" />
-    <Compile Include="Assets\scripts\collision.cs" />
     <Compile Include="Assets\scripts\movement.cs" />
     <Compile Include="Assets\scripts\CameraShake.cs" />
     <Compile Include="Assets\scripts\customcursor.cs" />
