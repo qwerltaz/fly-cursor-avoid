@@ -11,6 +11,7 @@ public static class globals
 public class customcursor : MonoBehaviour
 {
     public Transform sparkle;
+    TrailRenderer _trail;
     Vector2 targetpos;
     public CameraShake camerashake;
     public static bool isalive = true;
@@ -18,13 +19,19 @@ public class customcursor : MonoBehaviour
     public AudioClip[] audiocliparray;
     void Awake()
     {
+        _trail = GetComponentInChildren<TrailRenderer>();
         deadsfx = GetComponent<AudioSource>();
+        sparkle.GetComponent<ParticleSystem>().enableEmission = false;
+        _trail.GetComponentInChildren<TrailRenderer>().enabled = false;
+        
     }
 
     void Start()
     {
         Cursor.visible = false;
-        sparkle.GetComponent<ParticleSystem>().enableEmission = false;
+        FindObjectOfType<TrailRenderer>().GetComponent<TrailRenderer>().Clear();
+        _trail.GetComponentInChildren<TrailRenderer>().enabled = true;
+
     }
     void OnTriggerEnter2D()
     {
@@ -46,7 +53,7 @@ public class customcursor : MonoBehaviour
         if (isalive == true)
         {
             targetpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            transform.position = targetpos;
+            base.transform.position = targetpos;
         }
     }
     IEnumerator stopsparkles()
