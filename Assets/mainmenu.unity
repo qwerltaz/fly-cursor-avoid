@@ -568,8 +568,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 121.126755, y: 60.700012}
+  m_AnchoredPosition: {x: 0, y: 81}
+  m_SizeDelta: {x: 232.48427, y: 60.700012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1194219115
 GameObject:
@@ -803,7 +803,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 82}
+  m_AnchoredPosition: {x: 0, y: 0.0013428}
   m_SizeDelta: {x: 244.46591, y: 60.700012}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1640102373
@@ -851,7 +851,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 681162615}
         m_TargetAssemblyTypeName: EscMenu, Assembly-CSharp
-        m_MethodName: quit
+        m_MethodName: nextlevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -965,7 +965,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 681162615}
         m_TargetAssemblyTypeName: EscMenu, Assembly-CSharp
-        m_MethodName: nextlevel
+        m_MethodName: levelOne
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1337,12 +1337,12 @@ PrefabInstance:
     - target: {fileID: 3667442661921994289, guid: 5a95af0d7076fc141855cf428d7e08de,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 81
       objectReference: {fileID: 0}
     - target: {fileID: 3667442661921994289, guid: 5a95af0d7076fc141855cf428d7e08de,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 121.126755
+      value: 232.48427
       objectReference: {fileID: 0}
     - target: {fileID: 3667442661921994289, guid: 5a95af0d7076fc141855cf428d7e08de,
         type: 3}
@@ -1407,7 +1407,7 @@ PrefabInstance:
     - target: {fileID: 3667442661921994318, guid: 5a95af0d7076fc141855cf428d7e08de,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: nextlevel
+      value: levelOne
       objectReference: {fileID: 0}
     - target: {fileID: 3667442661921994318, guid: 5a95af0d7076fc141855cf428d7e08de,
         type: 3}
@@ -1552,7 +1552,7 @@ PrefabInstance:
     - target: {fileID: 3667442663607425208, guid: 5a95af0d7076fc141855cf428d7e08de,
         type: 3}
       propertyPath: m_Text
-      value: NEW
+      value: NEW GAME
       objectReference: {fileID: 0}
     - target: {fileID: 3667442663607425210, guid: 5a95af0d7076fc141855cf428d7e08de,
         type: 3}
@@ -1596,4 +1596,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NEW
+  m_Text: NEW GAME

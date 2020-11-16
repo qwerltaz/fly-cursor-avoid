@@ -1,14 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Runtime.InteropServices;
-using System;
-using System.Windows;
-using System.Windows.Input;
-using System.Drawing;
-using System.Data.OleDb;
 
 [StructLayout(LayoutKind.Sequential)]
 public struct POINT
@@ -34,7 +26,7 @@ public class EscMenu : MonoBehaviour
     public static extern bool GetCursorPos(out POINT lpPoint);
     [DllImport("user32.dll")]
     static extern bool SetCursorPos(int X, int Y);
-  
+   
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -67,6 +59,11 @@ public class EscMenu : MonoBehaviour
     public void nextlevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1f;
+    }
+    public void levelOne()
+    {
+        SceneManager.LoadScene(2);
         Time.timeScale = 1f;
     }
     public void menu()
